@@ -19,6 +19,9 @@ def get_orders(names, egg_order):
         names.append(name)
         egg_order.append(input("How many eggs does {} wish to order? ".format(name)))
 
+    #return complete order info lists
+    return names, egg_order
+
 
 def show_orders(names, egg_order):
     """
@@ -51,7 +54,11 @@ names = [] #customer names
 egg_order = [] #num of eggs ordered
 
 #gets + stores order info until finish
-get_orders(names, egg_order)
+names, egg_order = get_orders(names, egg_order)
+
+#print order info lists to check correct info stored
+print(names)
+print(egg_order)
 
 #show_orders(names, egg_order)
 #show_report(egg_order)
