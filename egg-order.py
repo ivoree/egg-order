@@ -27,6 +27,8 @@ def show_orders(names, egg_order):
     """
     calculates price for each egg order, and displays order information - name, number of eggs, price
     """
+
+    #MRS DVA MADE CHANGES
     PRICE_PER_DOZEN = 6.5
     print("Showing orders")
 
